@@ -6,7 +6,7 @@ var background_noise = 0;
 
 function startClassifictaion() {
     navigator.mediaDevices.getUserMedia({audio:true});
-    classifier = ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/XSipLvQmK/model.json',modelReady);
+    classifier = ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/Yf7wtG9d8/model.json',modelReady);
 }
 function modelReady() {
     classifier.classify(gotResult);
